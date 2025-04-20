@@ -1,0 +1,65 @@
+/* Basic Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Courier New', Courier, monospace;
+  background-color: #101010;
+  color: #fff;
+}
+
+/* Navigation Styles */
+/* Container for the dropdowns */
+.dropdown-container {
+  display: flex; /* This is the magic */
+  gap: 20px;     /* Space between the dropdowns */
+  background-color: #1a1a1a;
+  padding: 20px;
+}
+
+/* Dropdown structure */
+.dropdown {
+  position: relative;
+}
+
+.dropbtn {
+  background-color: #333;
+  color: white;
+  padding: 12px 16px;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #2a2a2a;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: white;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background-color: #444;
+}
+
+/* Show the dropdown on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+p {
+  margin-bottom: 20px; /* or whatever spacing you like */
+  line-height: 1.6;    /* optional: improves readability */
+}
